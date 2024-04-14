@@ -9,6 +9,10 @@ export default function homepageContent() {
     greeting.textContent = "Welcome to Odin Restaurant";
     mainContentSection.appendChild(greeting);
 
+    const GoToMenuBtn = document.createElement("button");
+    GoToMenuBtn.textContent = "Go to the Menu";
+    mainContentSection.appendChild(GoToMenuBtn);
+
     return mainContentSection;
 
 };

@@ -1,7 +1,11 @@
+// Script Files
 import homepageContent from "./homepage-content";
 import menuContent from "./menu-content";
 import aboutContent from "./about-content";
 import contactContent from "./contact-content";
+
+// Style Files
+import "./style.css";
 
 function eventListeners() {
 
