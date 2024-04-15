@@ -5,13 +5,16 @@ export default function homepageContent() {
     // Clear current content
     mainContentSection.textContent = "";
 
+    const container = document.createElement("div");
     const greeting = document.createElement("h2");
     greeting.textContent = "Welcome to Odin Restaurant";
-    mainContentSection.appendChild(greeting);
+    container.appendChild(greeting);
 
     const GoToMenuBtn = document.createElement("button");
     GoToMenuBtn.textContent = "Go to the Menu";
-    mainContentSection.appendChild(GoToMenuBtn);
+    container.appendChild(GoToMenuBtn);
+
+    mainContentSection.appendChild(container);
 
     return mainContentSection;
 

@@ -7,6 +7,8 @@ import contactContent from "./contact-content";
 // Style Files
 import "./style.css";
 
+
+// Event Listeners for the NavBar
 function eventListeners() {
 
     const homeBtn = document.querySelector("#home_nav_btn");
@@ -22,3 +24,5 @@ function eventListeners() {
 }
 
 const navButtons = eventListeners();
+
+

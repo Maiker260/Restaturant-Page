@@ -1,0 +1,86 @@
+:root {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-image: url("./Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Top Section */
+.top_section {
+    min-width: 100vw;
+    min-height: 7vh;
+    background-color: black;
+    opacity: 80%;
+    align-items: center;
+    position: fixed;
+
+}
+
+.nav_bar {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left_nav_bar {
+    color: white;
+    align-items: center;
+    gap: 1em;
+}
+
+.main_logo {
+    fill: white;
+}
+
+.right_nav_bar {
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.right_nav_bar_list {
+    list-style: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Content Section */
+#content {
+    color: white;
+}
+
+.main_content {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/* Footer Section */
+.footer {
+    font-size: 1.5rem;
+    color: white;
+    min-width: 100vw;
+    min-height: 3vh;
+    background-color: black;
+    opacity: 80%;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

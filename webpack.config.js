@@ -10,7 +10,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'main.js',
+    filename: "[name].js",
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -20,6 +20,21 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
+  },
+  mode: 'development',
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+    client: {
+      overlay: false,
+    },
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };

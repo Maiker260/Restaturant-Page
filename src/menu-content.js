@@ -5,9 +5,11 @@ export default function menuContent() {
     // Clear current content
     mainContentSection.textContent = "";
 
+    const container = document.createElement("div");
+    mainContentSection.appendChild(container);
     const menu = document.createElement("h2");
     menu.textContent = "MENU";
-    mainContentSection.appendChild(menu);
+    container.appendChild(menu);
 
     return mainContentSection;
 
