@@ -1,8 +1,8 @@
 // Script Files
-import homepageContent from "./homepage-content";
-import menuContent from "./menu-content";
-import aboutContent from "./about-content";
-import contactContent from "./contact-content";
+import showHomepageContent from "./homepage-content";
+import showMenuContent from "./menu-content";
+import showAboutContent from "./about-content";
+import showContactContent from "./contact-content";
 
 // Style Files
 import "./style.css";
@@ -16,10 +16,10 @@ function eventListeners() {
     const aboutBtn = document.querySelector("#about_nav_btn");
     const contactBtn = document.querySelector("#contact_nav_btn");
 
-    homeBtn.addEventListener("click", homepageContent);
-    menuBtn.addEventListener("click", menuContent);
-    aboutBtn.addEventListener("click", aboutContent);
-    contactBtn.addEventListener("click", contactContent);
+    homeBtn.addEventListener("click", showHomepageContent);
+    menuBtn.addEventListener("click", showMenuContent);
+    aboutBtn.addEventListener("click", showAboutContent);
+    contactBtn.addEventListener("click", showContactContent);
 
 }
 

@@ -22,8 +22,7 @@ body {
 .top_section {
     min-width: 100vw;
     min-height: 7vh;
-    background-color: black;
-    opacity: 80%;
+    background-color: #000000d9;
     align-items: center;
     position: fixed;
 
@@ -62,13 +61,53 @@ body {
     color: white;
 }
 
-.main_content {
+.main_section {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main_container {
+    background-color: #000000d9;
+    border: 2px solid white;
+    padding: 2em;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
 }
 
+.main_section_title {
+    margin-top: 0;
+    font-size: 2.5rem;
+    color: white;
+}
 
+.main_btns {
+    padding: 0.8em;
+    background-color: #000;
+    color: white;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.menu_items {
+    align-items: center;
+    font-size: 1rem;
+}
+
+.dish_name {
+    text-align: left;
+    width: 75%;
+}
+
+.dish.price {
+    text-align: right;
+    width: 25%;
+}
 
 /* Footer Section */
 .footer {
@@ -76,8 +115,7 @@ body {
     color: white;
     min-width: 100vw;
     min-height: 3vh;
-    background-color: black;
-    opacity: 80%;
+    background-color: #000000d9;
     justify-content: center;
     align-content: center;
     position: fixed;

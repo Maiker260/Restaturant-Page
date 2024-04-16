@@ -6,12 +6,17 @@ export default function homepageContent() {
     mainContentSection.textContent = "";
 
     const container = document.createElement("div");
+    container.classList.add("flex");
+    container.classList.add("main_container");
+
     const greeting = document.createElement("h2");
     greeting.textContent = "Welcome to Odin Restaurant";
+    greeting.classList.add("main_section_title");
     container.appendChild(greeting);
 
     const GoToMenuBtn = document.createElement("button");
     GoToMenuBtn.textContent = "Go to the Menu";
+    GoToMenuBtn.classList.add("main_btns");
     container.appendChild(GoToMenuBtn);
 
     mainContentSection.appendChild(container);

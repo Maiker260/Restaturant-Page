@@ -5,9 +5,16 @@ export default function contactContent() {
     // Clear current content
     mainContentSection.textContent = "";
 
+    const container = document.createElement("div");
+    container.classList.add("flex");
+    container.classList.add("main_container");
+
     const contact = document.createElement("h2");
     contact.textContent = "CONTACT INFORMATION";
-    mainContentSection.appendChild(contact);
+    contact.classList.add("main_section_title");
+    container.appendChild(contact);
+
+    mainContentSection.appendChild(container);
 
     return mainContentSection;
 
