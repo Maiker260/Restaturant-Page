@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .flex {
@@ -41,7 +46,11 @@ body {
 }
 
 .main_logo {
-    fill: white;
+    fill: #16eadc;
+}
+
+.main_title {
+    color: #16eadc;
 }
 
 .right_nav_bar {
@@ -56,36 +65,57 @@ body {
     cursor: pointer;
 }
 
+.right_nav_bar_list:hover {
+    color: #16eadc;
+}
+
 /* Content Section */
 #content {
     color: white;
+    overflow: auto;
 }
 
 .main_section {
     justify-content: center;
-    align-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
 }
 
+.main_section_title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    color: #16eadc;
+    text-decoration: underline;
+}
+
 .main_container {
     background-color: #000000d9;
     border: 2px solid white;
-    padding: 2em;
+    padding: 65em 6em 6em 6em;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    width: 40%;
 }
 
-.main_section_title {
+.homepage_main_container {
+    background-color: #000000d9;
+    border: 2px solid white;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+
+        /* HOME */
+.home_section_title {
     margin-top: 0;
     font-size: 2.5rem;
-    color: white;
+    color: #16eadc;
 }
 
-.main_btns {
+.home_section_btn {
     padding: 0.8em;
     background-color: #000;
     color: white;
@@ -94,30 +124,53 @@ body {
     cursor: pointer;
 }
 
-.menu_items {
+.item_container {
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
+        /* MENU */
 .dish_name {
     text-align: left;
     width: 75%;
 }
 
-.dish.price {
+.dish_price {
     text-align: right;
     width: 25%;
 }
 
+.menu_section_title {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #71a8a1;
+}
+
+.item_details {
+    margin: 0.5em 0;
+}
+
+.menu_section_title_bottom {
+    margin-top: 2em;
+
+}
+
+        /* ABOUT */
+
+
+        /* CONTACT */
+
 /* Footer Section */
 .footer {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     min-width: 100vw;
     min-height: 3vh;
     background-color: #000000d9;
     justify-content: center;
-    align-content: center;
     position: fixed;
     left: 0;
     bottom: 0;
