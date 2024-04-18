@@ -33,6 +33,10 @@ body {
 
 }
 
+#main_logo_title {
+    cursor: pointer;
+}
+
 .nav_bar {
     width: 100%;
     justify-content: space-around;
@@ -85,8 +89,8 @@ body {
 .main_section_title {
     font-size: 3rem;
     text-align: center;
-    margin-top: 5em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     color: #16eadc;
     text-decoration: underline;
 }
@@ -94,7 +98,7 @@ body {
 .main_container {
     background-color: #000000d9;
     border: 2px solid white;
-    padding: 65em 6em 6em 6em;
+    padding: 6em 6em 6em 6em;
     flex-direction: column;
     width: 40%;
 }
@@ -124,9 +128,19 @@ body {
     cursor: pointer;
 }
 
+.home_section_btn:hover {
+    color: #71a8a1;
+}
+
 .item_container {
     align-items: center;
     font-size: 1.5rem;
+}
+
+.item_container:hover {
+
+    color: #16eadc;
+
 }
 
         /* MENU */
@@ -140,6 +154,15 @@ body {
     width: 25%;
 }
 
+.menu_title {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    color: #16eadc;
+    text-decoration: underline;
+}
+
 .menu_section_title {
     font-size: 2rem;
     font-weight: bolder;
@@ -147,6 +170,14 @@ body {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     color: #71a8a1;
+}
+
+.menu_main_container {
+    background-color: #000000d9;
+    border: 2px solid white;
+    padding: 65em 6em 6em 6em;
+    flex-direction: column;
+    width: 40%;
 }
 
 .item_details {
@@ -160,8 +191,16 @@ body {
 
         /* ABOUT */
 
+.about_content {
+    font-size: 1.5rem;
+}
 
         /* CONTACT */
+
+.contact_content {
+    font-size: 1.5rem;
+
+}
 
 /* Footer Section */
 .footer {

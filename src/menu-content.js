@@ -7,10 +7,10 @@ export default function menuContent() {
 
     const container = document.createElement("div");
     container.classList.add("flex");
-    container.classList.add("main_container");
+    container.classList.add("menu_main_container");
     
     const menu = document.createElement("h2");
-    menu.classList.add("main_section_title");
+    menu.classList.add("menu_title");
     menu.textContent = "MENU";
     container.appendChild(menu);
 

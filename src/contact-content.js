@@ -16,6 +16,11 @@ export default function contactContent() {
 
     mainContentSection.appendChild(container);
 
+    const contactInfo = document.createElement("p");
+    contactInfo.classList.add("contact_content");
+    contactInfo.textContent = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati id earum laboriosam ducimus iste recusandae placeat itaque iure temporibus nemo numquam dignissimos possimus, consequuntur eligendi odio nostrum voluptas culpa distinctio?"
+    container.appendChild(contactInfo);
+
     return mainContentSection;
 
 };

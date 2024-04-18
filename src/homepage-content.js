@@ -1,3 +1,5 @@
+import showMenuContent from "./menu-content";
+
 export default function homepageContent() {
     
     const mainContentSection = document.querySelector("#content");
@@ -7,7 +9,6 @@ export default function homepageContent() {
 
     const container = document.createElement("div");
     container.classList.add("flex");
-    // container.classList.add("main_container");
     container.classList.add("homepage_main_container");
 
     const greeting = document.createElement("h2");
@@ -17,8 +18,11 @@ export default function homepageContent() {
 
     const GoToMenuBtn = document.createElement("button");
     GoToMenuBtn.textContent = "Go to the Menu";
+    GoToMenuBtn.setAttribute("id", "GoToMenuBtn");
     GoToMenuBtn.classList.add("home_section_btn");
     container.appendChild(GoToMenuBtn);
+
+    GoToMenuBtn.addEventListener("click", showMenuContent);
 
     mainContentSection.appendChild(container);
 
